@@ -1,0 +1,90 @@
+* {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.input-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.search-button {
+  position: absolute;
+  left: 32.5vw;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.search-button img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  opacity: 0.3;
+}
+
+input,
+.item {
+  padding: 16px 16px 16px 60px;
+  border: none;
+  background: rgba(0, 0, 0, 0.003);
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%), 0 25px 50px 0 rgb(0 0 0 / 10%);
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 1.4em;
+  width: 550px;
+  outline: none;
+}
+
+::placeholder {
+  opacity: 0.3;
+}
+
+.tv-shows-all {
+  display: grid;
+  grid-template-columns: repeat(3, 0.2fr);
+  margin-top: 50px;
+  row-gap: 50px;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.tv-show {
+  flex: 1 0 auto;
+}
+
+.tv-show img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.subtext,
+.genre {
+  text-align: center;
+}
+
+.subtext {
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.genre {
+  font-size: 11px;
+  opacity: 0.5;
+  padding: 2px;
+}
