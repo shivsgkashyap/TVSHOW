@@ -68,7 +68,7 @@ formElement.addEventListener("submit", function (eventData) {
 });
 
 function changeUrl(showTitle) {
-  window.location.href = `showsearch.html?showTitle=${showTitle}`;
+  window.location.href = `index.html?showTitle=${showTitle}`;
 }
 
 function querySearch(searchedShow) {

@@ -14,7 +14,7 @@ function render() {
   removeEventListenerToClass(".fav-button", "click", onFavClick);
 
   let tvShowInformation = `
-    <div class="back-button"d><a href="showsearch.html">Home</a></div>  
+    <div class="back-button"d><a href="index.html">Home</a></div>  
     <div class="tv-show-image">
       <img src="${
         selectedTvShow["image"] === null
