@@ -1,8 +1,9 @@
 * {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-weight: 300;
 }
 
 a,
@@ -21,15 +22,43 @@ a:active {
   flex-wrap: wrap;
 }
 
+a {
+  display: inline-block;
+  position: relative;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 .tv-show-title {
   align-self: flex-end;
   font-size: 3rem;
   flex: 0 1 0;
+  font-weight: 500;
 }
 
-.tv-show-image img {
+.tv-show-image {
   max-width: 19em;
   max-height: 19em;
+}
+.tv-show-image > img {
+  width: 100%;
+  min-height: 100%;
 }
 
 .fav-button {
@@ -38,7 +67,12 @@ a:active {
   border: none;
   outline: none;
   cursor: pointer;
-  padding-bottom: 0.5em;
+  padding-bottom: 1.2em;
+  transition: transform 0.2s;
+}
+
+.fav-button:hover {
+  transform: scale(1.1);
 }
 
 .plot {
@@ -78,4 +112,9 @@ a:active {
 
 .seasons-information {
   margin-bottom: 1em;
+}
+
+h2 {
+  font-weight: 500;
+  border-bottom: 1px solid #0087ca;
 }
