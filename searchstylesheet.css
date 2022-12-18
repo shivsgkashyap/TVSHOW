@@ -14,15 +14,17 @@ a:active {
 }
 
 .input-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 550px;
 }
 
 .search-button {
   position: absolute;
-  left: 32.5vw;
+  left: 10px;
   background: transparent;
   border: none;
   outline: none;
@@ -36,8 +38,7 @@ a:active {
   opacity: 0.3;
 }
 
-input,
-.item {
+input {
   padding: 16px 16px 16px 60px;
   border: none;
   background: rgba(0, 0, 0, 0.003);
@@ -46,7 +47,7 @@ input,
   font-weight: 100;
   font-size: 24px;
   line-height: 1.4em;
-  width: 550px;
+  width: 100%;
   outline: none;
 }
 
@@ -65,7 +66,10 @@ input,
 }
 
 .tv-show {
-  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .tv-show img {

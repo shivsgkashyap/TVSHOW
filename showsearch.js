@@ -6,6 +6,7 @@ let tvShowInformation = [];
 function render() {
   let tvShowList = "";
   for (let counter = 0; counter < tvShowInformation.length; counter++) {
+    console.log(tvShowInformation);
     let show = `
       <a href="showinfo.html?tvshow=${tvShowInformation[counter].id}">
         <div class="tv-show" data-counter="${counter}">
@@ -19,7 +20,9 @@ function render() {
               ? "Unknown Name"
               : tvShowInformation[counter]["name"]
           }</div>
-          <div class="genre">${tvShowInformation[counter]["genres"]}</div>
+          <div class="genre">${tvShowInformation[counter]["genres"].join(
+            ", "
+          )}</div>
         </div>
       </a>  
     `;
