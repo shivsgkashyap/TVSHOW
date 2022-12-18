@@ -20,6 +20,7 @@ a:active {
   max-width: 34em;
   margin: 30px auto 0;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 a {
@@ -117,4 +118,16 @@ a:hover::after {
 h2 {
   font-weight: 500;
   border-bottom: 1px solid #0087ca;
+}
+
+@media (max-width: 768px) {
+  .cast-information,
+  .seasons-information {
+    align-items: center;
+  }
+
+  .cast-list,
+  .seasons-list {
+    justify-content: center;
+  }
 }

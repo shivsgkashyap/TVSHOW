@@ -84,6 +84,11 @@ input {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: transform 0.2s;
+}
+
+.tv-show:hover {
+  transform: scale(1.02);
 }
 
 .tv-show img {
