@@ -31,7 +31,7 @@ function render() {
   `;
   tvShowElement.innerHTML = tvShowInformation;
 
-  let plotInformation = ` <div class="plot">${selectedTvShow["summary"]}</div>
+  let plotInformation = ` <div class="plot-details">${selectedTvShow["summary"]}</div>
   `;
   plotElement.innerHTML = plotInformation;
 

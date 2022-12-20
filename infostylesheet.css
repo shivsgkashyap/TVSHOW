@@ -120,7 +120,7 @@ h2 {
   border-bottom: 1px solid #0087ca;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .cast-information,
   .seasons-information {
     align-items: center;
@@ -129,5 +129,9 @@ h2 {
   .cast-list,
   .seasons-list {
     justify-content: center;
+  }
+
+  .plot {
+    width: 90%;
   }
 }
