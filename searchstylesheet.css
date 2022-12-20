@@ -130,7 +130,7 @@ footer p {
 }
 
 footer a {
-  align-self: center;
+  display: flex;
   margin-left: 0.5em;
 }
 
